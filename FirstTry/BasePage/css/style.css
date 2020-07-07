@@ -1,0 +1,138 @@
+body{
+	font-family: 'Lato', sans-serif;
+	font-size:15px;
+	line-height:1.5em;
+}
+/*
+# for id's
+and . for classes
+*/
+#container{
+    width:70%;
+    /* top right bottom left*/
+    /* margin: 10px 20px; TB LR*/
+    margin:10px auto;
+    background:#fff;
+    overflow:auto; /* if the content is not fitting in the page*/
+}
+p{
+    margin:10px;
+    line-height:1.5em;
+}
+h1{
+    font-size:39px;
+    font-weight:bold;
+    margin:20px 0 10px 0;
+    line-height:1.2em;
+}
+
+h3{
+    font-size:22px;
+    margin:10px 0;
+}
+
+h4{
+    font-size:19px;
+    margin:10px 0;
+}
+
+strong{
+     font-weight:bold;
+}
+
+.clearFix{
+    clear:both;
+}
+
+header#mainHeader{
+    border-bottom:4px solid #4ea0d8;
+}
+
+img#logo{
+    margin:auto;
+    display:block;
+}
+
+#mainText{
+    text-align:center;
+    color:#333;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+#sub1{
+    float:left;
+    width:48%;
+}
+#sub2{
+    float:right;
+    width:48%;
+}
+
+.points li{
+    margin-bottom:30px;
+}
+.points img{
+    float:left;
+    margin-right:7px;
+}
+.points h4{
+    padding-top:5px;
+}
+
+#contactForm{
+    padding:10px 15px 15px 15px;
+    border:4px solid #$4ea0d8;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -mozborder-radius:10px;
+    overflow:auto;
+    background:#f4f4f4;
+}
+#contactForm div{
+    margin-bottom:20px;
+}
+#contactForm label{
+    display:inline-block;
+    font-weight:bold;
+    width:100px;
+}
+#contactForm input[type='text'], #contactForm input[type='email']{
+    border:#ccc 1px solid;
+    -webkit-border-radius:5px;
+    -mozborder-radius:5px;
+    border-radius:5px;
+    height:25px;
+    width:65%;
+}
+#contactForm input[type='submit']{
+    padding:12px 17px;
+    color:#000;
+    background:fa5e3e;
+    border:0;
+    -webkit-border-radius:5px;
+    -mozborder-radius:5px;
+    border-radius:5px;
+    float:right;
+    display:block;
+}
+#contactForm input[type='submit']:hover{
+    background:d55427;
+    cursor:pointer;
+}
+#contactForm .contentFooter p{
+    font-style:italic;
+    text-align:center;
+    color:#666;
+    font-size:80%
+}
+#contentHeader{
+    border-bottom:#ddd solid 1px;
+    margin-bottom:20px;
+    padding-bottom:10px;
+}
+.contentFooter{
+    border-top:#ddd solid 1px;
+    margin-bottom:20px;
+    padding-bottom:10px;
+}
