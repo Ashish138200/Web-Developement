@@ -120,12 +120,7 @@ img#logo{
     background:d55427;
     cursor:pointer;
 }
-#contactForm .contentFooter p{
-    font-style:italic;
-    text-align:center;
-    color:#666;
-    font-size:80%
-}
+
 #contentHeader{
     border-bottom:#ddd solid 1px;
     margin-bottom:20px;
@@ -135,4 +130,57 @@ img#logo{
     border-top:#ddd solid 1px;
     margin-bottom:20px;
     padding-bottom:10px;
+}
+#contactForm .contentFooter p{
+    font-style:italic;
+    text-align:center;
+    color:#666;
+    font-size:80%
+}
+footer#mainFooter{
+    text-align:center;
+    border-top:#ccc solid 1px;
+    color:#aaa;
+}
+testimonial{
+    margin:40px 0;
+    text-align:center;
+    color:#666;
+}
+testimonial img{
+    float:left;
+    margin-right:20px;
+}
+@media(max-width:960px){
+    #container{
+        width:80%;
+    }
+    h1{
+        font-size:33px;
+    }
+    #sub1, sub2{
+        float:none;
+        width:100%;
+    }
+    .points li{
+        background:#eee;
+        padding:8px;
+        -webkit-border-radius:10px;
+        -mozborder-radius:10px;
+        border-radius:10px;
+    }
+    .points img{
+        margin-top:7px;
+    }
+    #testimonial img{
+        float:none;
+        margin:auto;
+        display:block;
+        margin-bottom:20px;
+    }
+}
+@media(max-width:568px){
+    h1{
+        font-size:22px;
+    }
 }
