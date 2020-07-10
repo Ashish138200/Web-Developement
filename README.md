@@ -9,7 +9,7 @@
 
 **[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)** 
 **[CodePen](https://codepen.io/)**
-**[Bootstap](https://getbootstrap.com/docs/4.5/components/alerts/)
+**[Bootstap](https://getbootstrap.com/docs/4.5/components/alerts/)**
 
 * **Full stack Developement**
 * Landing Page
