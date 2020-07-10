@@ -1,0 +1,47 @@
+p{
+
+    color:white;
+    font-family: 'Galada', cursive;
+}
+body{
+    background-color:#00001a;
+    font-family: 'Galada', cursive;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-align:center;
+    /*T R B L*/
+    border:20px solid #00ffff;
+    border-top:0px;
+    margin:0px;
+    border-bottom:0px;
+}
+h1{
+    color:white;
+}
+h3{
+    color:white;
+}
+a:visited{
+    color:#99ffcc;
+}
+h2{
+    color:white;
+}
+.form{
+    font-size:1.2em;
+    border:5px solid #00cccc;
+    border-radius:30px;
+    border-color:#00ffff;
+    margin-left:500px;
+    margin-right:500px;
+}
+label{
+    font-family: 'Galada', cursive;
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+}
+#sub{
+    background-color:#ff4d4d;
+    height:20px;
+    width:100px;
+    margin:4px;
+}
