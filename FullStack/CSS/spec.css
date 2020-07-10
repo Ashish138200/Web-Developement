@@ -1,0 +1,77 @@
+td{
+    background-color:black;
+    height:500px;
+    width:100px;
+    border:0px solid white;
+}
+h1{
+    font-family: 'Grenze Gotisch', cursive;
+    /*font-family:cursive;*/
+    text-align:center;
+}
+.art{
+    margin:auto
+}
+#a1{
+    background-color:#FFFFFF;
+}
+#a2{
+    background-color:#C0C0C0;
+}
+#a3{
+    background-color:#808080;
+}
+#a4{
+    background-color:#000000;
+}
+#a5{
+    background-color:#FF0000;
+}
+#a6{
+    background-color:#800000;
+}
+#a7{
+    background-color:#FFFF00;
+}
+#a8{
+    background-color:#808000;
+}
+#a9{
+    background-color:#00FF00;
+}
+#a10{
+    background-color:#008000;
+}
+#a11{
+    background-color:#00FFFF;
+}
+#a12{
+    background-color:#008080;
+}
+#a13{
+    background-color:#0000FF;
+}
+#a14{
+    background-color:#000080;
+}
+#a15{
+    background-color:#FF00FF;
+}
+#a16{
+    background-color:#800080;
+}
+
+GRAY
+BLACK
+RED	#FF0000
+MAROON
+YELLOW
+OLIVE
+LIME
+GREEN
+AQUA
+TEAL
+BLUE
+NAVY
+FUCHSIA
+PURPLE
