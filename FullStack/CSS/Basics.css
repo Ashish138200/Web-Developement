@@ -1,0 +1,56 @@
+/*
+selected tag{
+    property:value;
+}
+*/
+h1{
+    color:blue;
+    font-size:40px;
+}
+li{
+    color:#00cccc;
+}
+p{
+    color: rgb(255,97,0);
+}
+h4{
+    color: rgba(255,97,0,1) /*rgb(alpha)[0:tansparent & 1:opaque] */
+}
+body{
+    background-color:gray;
+    /*
+    background: url()
+    bakcground-repeat:no-repeat;
+    */
+}
+.div1{
+    background-color:rgb(102, 102, 153);
+    border-color: rgb(10, 10, 15);
+    border-width:5px;
+    border-style:dotted;
+}
+span{
+    background:red;
+    color:black;
+}
+#lid{
+    color:green;
+    text-decoration:line-through;
+}
+
+/*
+* use to apply effect to all the tags and classes except ids
+*/
+
+h4 + ol{
+    border:4px dotted purple;
+}
+/*
+li a{
+    color:blue;
+    border:5px solid orange;
+}
+*/
+a:visited{
+    color:black;
+}
