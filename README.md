@@ -14,6 +14,7 @@
 * **Full stack Developement**
 * Landing Page
 * Calender
+* Connect Four Game
 * Image Slider
 * Tansition Dropdown Menu
 * CSS Timeline
