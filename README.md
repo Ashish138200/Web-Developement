@@ -55,3 +55,16 @@ python manage.py migrate
 ```
 This will migrate all the resources which are needed for this project.
 
+For building you first django application:
+```bash
+python manage.py startapp firstApp
+```
+You'll get a folder by name firstApp:
+* **\_\_init__.py:** This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package
+* **admin.py:** You can register your models here which Django will then use them with Django’s admin interface.
+* **apps.py:** Here you can place application specific configurations 
+* **models.py:** Here you store the application’s data models 
+* **tests.py:** Here you can store test functions to test your code
+* **views.py:** This is where you have functions that handle requests and return responses
+* **Migrations folder:** This directory stores database specific information as it relates to the models
+
