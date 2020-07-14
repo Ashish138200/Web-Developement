@@ -23,3 +23,27 @@
 * Animated Car
 * Animated Bootstrap Template
 * Newsletter Design with LESS
+
+## How to install django:
+```bash
+pip install django
+```
+Then
+```bash
+django-admin startproject projectName
+```
+Here you'll see bunch of files in the projectName folder:
+* **__init__.py:** This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package
+* **settings.py:** This is where you will store all your project settings
+* **urls.py:** This is a Python script that will store all the URL patterns for your project. Basically the different pages of your web application.
+* **wsgi.py:** This is a Python script that acts as the Web Server Gateway Interface. It will later on help us deploy our web app to production
+* **manage.py:** This is a Python script that we will use a lot. It will be associates with many commands as we build our web app!
+
+
+```bash
+python manage.py runserver
+```
+```bashThis will give you an IP address of a server which will give you a notice that django is successfully working.
+Django version 1.10.5, using settings 'first_project.settings'
+Starting development server at http://127.0.0.1:8000/```
+
