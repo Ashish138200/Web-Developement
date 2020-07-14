@@ -33,7 +33,7 @@ Then
 django-admin startproject projectName
 ```
 Here you'll see bunch of files in the projectName folder:
-* **__init__.py:** This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package
+* **\_\_init\_\_.py:** This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package
 * **settings.py:** This is where you will store all your project settings
 * **urls.py:** This is a Python script that will store all the URL patterns for your project. Basically the different pages of your web application.
 * **wsgi.py:** This is a Python script that acts as the Web Server Gateway Interface. It will later on help us deploy our web app to production
