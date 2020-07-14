@@ -43,7 +43,10 @@ Here you'll see bunch of files in the projectName folder:
 ```bash
 python manage.py runserver
 ```
-```bashThis will give you an IP address of a server which will give you a notice that django is successfully working.
+
+This will give you an IP address of a server which will give you a notice that django is successfully working.
+```bash
 Django version 1.10.5, using settings 'first_project.settings'
-Starting development server at http://127.0.0.1:8000/```
+Starting development server at http://127.0.0.1:8000/
+```
 
