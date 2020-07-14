@@ -1,6 +1,6 @@
 # Web-Developement
 ![Alt Text](https://img.shields.io/badge/Python-3.7.4-red)
-![Alt Text](https://img.shields.io/badge/django-1.11-blue)
+![Alt Text](https://img.shields.io/badge/django-3.0.8-blue)
 ![Alt Text](https://img.shields.io/badge/HTML-5-brightgreen)
 ![Alt Text](https://img.shields.io/badge/CSS-3-red)
 ![Alt Text](https://img.shields.io/badge/JavaScript-5.1-yellowgreen)
@@ -46,7 +46,7 @@ python manage.py runserver
 
 This will give you an IP address of a server which will give you a notice that django is successfully working.
 ```bash
-Django version 1.10.5, using settings 'first_project.settings'
+Django version 3.0.8, using settings 'first_project.settings'
 Starting development server at http://127.0.0.1:8000/
 ```
 
