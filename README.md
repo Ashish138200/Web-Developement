@@ -49,4 +49,9 @@ This will give you an IP address of a server which will give you a notice that d
 Django version 3.0.8, using settings 'first_project.settings'
 Starting development server at http://127.0.0.1:8000/
 ```
+You'll see some x number of warnings so, to remove the run the following command in CLI:
+```bash
+python manage.py migrate
+```
+This will migrate all the resources which are needed for this project.
 
