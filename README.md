@@ -68,3 +68,8 @@ You'll get a folder by name firstApp:
 * **views.py:** This is where you have functions that handle requests and return responses
 * **Migrations folder:** This directory stores database specific information as it relates to the models
 
+For securing your application you can encrypt it by using hashing algorithm.
+```bash
+pip install bcrypt
+pip install django[argon2]
+```
