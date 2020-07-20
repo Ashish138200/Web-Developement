@@ -73,3 +73,13 @@ For securing your application you can encrypt it by using hashing algorithm.
 pip install bcrypt
 pip install django[argon2]
 ```
+In setting.py file add this to user hashing algorithms:
+```python
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',   
+]
+```
