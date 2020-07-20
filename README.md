@@ -68,3 +68,22 @@ You'll get a folder by name firstApp:
 * **views.py:** This is where you have functions that handle requests and return responses
 * **Migrations folder:** This directory stores database specific information as it relates to the models
 
+For securing your application you can encrypt it by using hashing algorithm.
+```bash
+pip install bcrypt
+pip install django[argon2]
+```
+In setting.py file add this for using hashing algorithms:
+```python
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',   
+]
+```
+For working with media files you need to install Python Imaging Library:
+```bash
+pip install pillow
+```
