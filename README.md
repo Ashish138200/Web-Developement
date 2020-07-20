@@ -83,3 +83,7 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',   
 ]
 ```
+For working with media files you need to install Python Imaging Library:
+```bash
+pip install pillow
+```
