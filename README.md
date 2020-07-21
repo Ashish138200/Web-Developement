@@ -27,6 +27,7 @@
 ## How to install django:
 ```bash
 pip install django
+python -m pip install django
 ```
 Then
 ```bash
@@ -71,7 +72,9 @@ You'll get a folder by name firstApp:
 For securing your application you can encrypt it by using hashing algorithm.
 ```bash
 pip install bcrypt
+python -m pip install bcrypt
 pip install django[argon2]
+python -m pip install django[argon2]
 ```
 In setting.py file add this for using hashing algorithms:
 ```python
@@ -86,4 +89,5 @@ PASSWORD_HASHERS = [
 For working with media files you need to install Python Imaging Library:
 ```bash
 pip install pillow
+python -m pip install pillow
 ```
