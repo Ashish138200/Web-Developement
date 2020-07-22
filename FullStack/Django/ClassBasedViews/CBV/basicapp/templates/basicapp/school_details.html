@@ -1,0 +1,15 @@
+{% extends 'basicapp/basicapp_base.html' %}
+{% block body_block %}
+<h1>Welcome to the details of all the schools</h1>
+<h3>School Details:</h3>
+<p>Name: {{school_detail.name}}</p>
+<p>Principal: {{school_detail.principal}}</p>
+<p>Location: {{school_detail.location}}</p>
+
+<h4>Students: </h4>
+<!--students is defined in models.py in foreign key-->
+{% for s in school_detail.students.all %}
+    <p>{{s.name}} who is {{s.age}} years old.</p>
+{% endfor %}
+<p><a class="btn btn-warning" href="{% url 'basicapp:update' pk=school_detail.pk %}">Update</a> </p>
+{% endblock %}
