@@ -91,3 +91,4 @@ For working with media files you need to install Python Imaging Library:
 pip install pillow
 python -m pip install pillow
 ```
+
