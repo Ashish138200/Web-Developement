@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Space Explorer</title>
+    <link rel = "icon" href ="icons/astronaut.png" type = "image/x-icon">
+    <!--      --------------      Bootstrap  -------------------------   -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!--      --------------      CSS  -------------------------   -->
+    <link rel="stylesheet" type="text/css" href="{% static 'SMC/space.css' %}">
+    <!--      --------------     Java script   -------------------------   -->
+    <!--      --------------     Google Fonts   -------------------------   -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend+Zetta&display=swap" rel="stylesheet">
+</head>
+<style>
+    #navbar{
+font-family: 'Lexend Zetta', sans-serif;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color: #ffffff;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+    color: #800000;
+}
+p{
+    color: #800000;
+    text-align: center;
+    font-family: 'Audiowide';
+}
+h2{
+    font-family: 'Audiowide';
+  font-style: normal;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+    color: #800000;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:auto;
+  height:auto;00
+  background-size: cover;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+
+}
+</style>
+<body>
+
+<!-- Image and text -->
+<nav class="navbar navbar-expand-lg fixed-top navbar navbar-light" style="background-color: #262626;" role="navigation" id="navbar">
+  <a class="navbar-brand" href="{% url 'home' %}" style="color: #C0C0C0">
+      <img src="{% static 'icons/astronaut.png' %}" alt="" width="30" height="30" class="d-inline-block align-top" loading="lazy">
+    Space Explorer
+  </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.github.com" style="color: #C0C0C0">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com" style="color: #C0C0C0">LinkedIn</a>
+                </li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+                {% if user.is_authenticated %}
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #C0C0C0">Post</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #C0C0C0">Groups</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #C0C0C0">Create Group</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'accounts:logout' %}" style="color: #C0C0C0">Logout</a>
+                </li>
+            {% else %}
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #C0C0C0">Groups</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'accounts:login' %}" style="color: #C0C0C0">Log In</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'accounts:signup' %}" style="color: #C0C0C0">Sign Up</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<div class="stars">
+<div class="twinkling">
+<div class="clouds">
+<!--Person fill-->
+    <div class="container">
+    <br>
+    <br>
+<!--<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+</svg>-->
+{% block content %}
+{% endblock %}
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
