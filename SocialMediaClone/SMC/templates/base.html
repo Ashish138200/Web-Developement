@@ -11,131 +11,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!--      --------------      CSS  -------------------------   -->
-    <link rel="stylesheet" type="text/css" href="{% static 'SMC/space.css' %}">
+    <link rel="stylesheet" href="{% static 'SMC/css/master.css'%}">
     <!--      --------------     Java script   -------------------------   -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!--      --------------     Google Fonts   -------------------------   -->
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend+Zetta&display=swap" rel="stylesheet">
 </head>
-<style>
-    #navbar{
-font-family: 'Lexend Zetta', sans-serif;
-    }
-    * {
-    margin: 0;
-    padding: 0;
 
-}
-header {
-    background-color:rgba(33, 33, 33, 0.9);
-    color: #ffffff;
-    display:block;
-    font: 14px/1.3 Arial,sans-serif;
-    height:50px;
-    position:relative;
-    z-index:5;
-}
-h1{
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Audiowide';
-  font-style: normal;
-  font-weight: 400;
-    color: #800000;
-}
-p{
-    color: #800000;
-    text-align: center;
-    font-family: 'Audiowide';
-}
-h2{
-    font-family: 'Audiowide';
-  font-style: normal;
-    font-size: 22px;
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 80%;
-    text-align: center;
-    color: #800000;
-}
-header a, a:visited {
-    text-decoration:none;
-    color:#fcfcfc;
-}
-
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-
-}
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-
-@keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-@-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
-}
-
-.stars, .twinkling, .clouds {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:auto;
-  height:auto;00
-  background-size: cover;
-}
-
-.stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index:0;
-}
-
-.twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  z-index:1;
-
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
-}
-
-.clouds{
-    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-    z-index:3;
-
-  -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
-  -o-animation:move-clouds-back 200s linear infinite;
-  -webkit-animation:move-clouds-back 200s linear infinite;
-  animation:move-clouds-back 200s linear infinite;
-
-}
-</style>
 <body>
 
 <!-- Image and text -->
@@ -147,29 +29,29 @@ header a, a:visited {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.github.com" style="color: #C0C0C0">Github</a>
+                    <a class="nav-link" href="https://www.github.com/Ashish138200" style="color: #C0C0C0">Github</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com" style="color: #C0C0C0">LinkedIn</a>
+                    <a class="nav-link" href="http://www.linkedin.com/in/ashish-chaurasia-683630175" style="color: #C0C0C0">LinkedIn</a>
                 </li>
         </ul>
         <ul class="navbar-nav navbar-right">
                 {% if user.is_authenticated %}
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color: #C0C0C0">Post</a>
+                    <a class="nav-link" href="{% url 'posts:create' %}" style="color: #C0C0C0">Post</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color: #C0C0C0">Groups</a>
+                    <a class="nav-link" href="{% url 'groups:all' %}" style="color: #C0C0C0">Groups</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color: #C0C0C0">Create Group</a>
+                    <a class="nav-link" href="{% url 'groups:create' %}" style="color: #C0C0C0">Create Group</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'accounts:logout' %}" style="color: #C0C0C0">Logout</a>
                 </li>
             {% else %}
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="color: #C0C0C0">Groups</a>
+                    <a class="nav-link" href="{% url 'groups:all' %}" style="color: #C0C0C0">Groups</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'accounts:login' %}" style="color: #C0C0C0">Log In</a>
@@ -202,5 +84,10 @@ header a, a:visited {
 </div>
 </div>
 </div>
+<canvas id="canvas"></canvas>
+<script type="text/javascript" src="{% static 'SMC/js/master.js' %}"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
