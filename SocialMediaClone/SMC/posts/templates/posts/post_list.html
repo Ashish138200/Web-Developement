@@ -1,6 +1,5 @@
 {% extends "posts/post_base.html" %}
 {% load humanize %}
-
 {% block pre_post_content %}
 <div class="col-md-4">
 	{% if request.user.is_authenticated %}
@@ -25,7 +24,9 @@
 			<ul class="list-unstyled">
 				{# {% get_other_groups as other_groups %} #}
 				{% for other_group in get_other_groups %}
-					<li class="group li-with-bullet"><a href="{% url 'groups:single' slug=other_group.slug %}">{{ other_group.name }}</a></li>
+					<li class="group li-with-bullet">
+						<a href="{% url 'groups:single' slug=other_group.slug %}">{{ other_group.name }}</a>
+					</li>
 				{% endfor %}
 			</ul>
 
