@@ -12,6 +12,7 @@
 **[Bootstrap](https://getbootstrap.com/docs/4.5/components/alerts/)**
 
 * **Full stack Developement**
+* _Social Media Clone_ 
 * Landing Page
 * Calender
 * Connect Four Game
@@ -91,4 +92,7 @@ For working with media files you need to install Python Imaging Library:
 pip install pillow
 python -m pip install pillow
 ```
-
+For installing django Debug Toolbar:
+```bash
+pip install django-debug-toolbar
+```
